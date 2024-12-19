@@ -51,4 +51,4 @@ jobs:
         env:
           S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
           S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
-        run: s3cmd --acl-public put traccar-*.zip s3://rentavitacom/builds/ --host=229589b08ea0b54308c5b682a3a11421.r2.cloudflarestorage.com --host-bucket=rentavita --access_key="$S3_ACCESS_KEY" --secret_key="$S3_SECRET_KEY"
+        run: s3cmd --acl-public put traccar-*.zip s3://rentavitacom/builds/ --host=https://229589b08ea0b54308c5b682a3a11421.r2.cloudflarestorage.com --host-bucket=rentavita --access_key="$S3_ACCESS_KEY" --secret_key="$S3_SECRET_KEY"
